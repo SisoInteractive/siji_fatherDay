@@ -5,6 +5,8 @@
 var app = {
     create: function () {
         //  create slider
+        var slidelen = $('.swiper-slide').length;
+
         app.mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             noSwiping: false,
@@ -18,7 +20,11 @@ var app = {
             //  router
             onTransitionEnd: function (swiper) {
                 var curIndex = swiper.activeIndex;
-
+                if(curIndex == slidelen -1){
+                    $("#iSlider-arrow").hide();
+                }else{
+                    $("#iSlider-arrow").show();
+                }
                 //  show bg
                 $('.scene').eq(curIndex).addClass('active')
 
