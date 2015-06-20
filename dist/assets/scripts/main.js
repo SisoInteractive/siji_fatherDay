@@ -7,9 +7,8 @@ var app = {
         //  create slider
         app.mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical',
-            parallax:true,
             noSwiping: false,
-            speed:500,
+            speed:900,
             // init
             onInit: function () {
                 $('.scene').eq(0).addClass('active');
