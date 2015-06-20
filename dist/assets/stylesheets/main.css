@@ -262,7 +262,7 @@ input {
   -webkit-animation-fill-mode: forwards;
 }
 .scene.active .weima {
-  z-index: 1001;
+  z-index: 101;
   -webkit-animation: bounceInTop 3s 1;
   -webkit-animation-delay: 3s;
   position: absolute;
